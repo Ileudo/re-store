@@ -20,7 +20,7 @@ const bookstoreService = new BookstoreService();
 // зависят от данных в Store, и которые могут диспатчить туда новые Actions.
 
 ReactDOM.render(
-  <BookstoreServiceProvider store={store}>
+  <Provider store={store}>
     <ErrorBoundary>
       <BookstoreServiceProvider value={bookstoreService}>
         <Router>
@@ -28,6 +28,6 @@ ReactDOM.render(
         </Router>
       </BookstoreServiceProvider>
     </ErrorBoundary>
-  </BookstoreServiceProvider>,
+  </Provider>,
   document.getElementById('root')
 );
