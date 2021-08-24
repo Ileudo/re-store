@@ -10,4 +10,4 @@ const BookListItem = ({ book }) => {
   );
 };
 
-export { BookListItem };
+export default BookListItem;

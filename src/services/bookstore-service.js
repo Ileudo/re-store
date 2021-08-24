@@ -1,4 +1,4 @@
-export default class BookstoreService {
+class BookstoreService {
   getBooks() {
     return [
       {
@@ -10,3 +10,5 @@ export default class BookstoreService {
     ];
   }
 }
+
+export default BookstoreService;

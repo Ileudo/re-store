@@ -20,4 +20,4 @@ const withBookstoreService = () => (Wrapped) => {
   };
 };
 
-export default withBookstoreService;
+export { withBookstoreService };
