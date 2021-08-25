@@ -23,7 +23,7 @@ class BookList extends Component {
   render() {
     const { books } = this.props;
     return (
-      <ul>
+      <ul className="book-list">
         {books.map((book) => {
           return (
             <li key={book.id}>
@@ -42,8 +42,8 @@ const mapStateToProps = (state) => {
   };
 };
 
-const mapDispatchToProps = (dispatch) => {
-  return booksLoaded;
+const mapDispatchToProps = {
+  booksLoaded,
 };
 
 export default compose(
