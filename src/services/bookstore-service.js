@@ -1,6 +1,6 @@
 class BookstoreService {
-  getBooks() {
-    return [
+  constructor() {
+    this.data = [
       {
         id: 1,
         title: 'Production-Ready Microservices',
@@ -18,6 +18,12 @@ class BookstoreService {
           'https://m.media-amazon.com/images/P/B079YWMY2V.01._SCLZZZZZZZ_SX500_.jpg',
       },
     ];
+  }
+
+  getBooks() {
+    return new Promise((resolve, reject) => {
+      setTimeout(() => resolve(this.data), 700);
+    });
   }
 }
 
